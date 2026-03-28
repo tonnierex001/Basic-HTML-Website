@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=header, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact form for a simple HTML-only website for roadmap.sh frontend" />
+    <meta name="keywords" content="Frontend Project, HTML, Roadmap.sh" />
+    <meta name="author" content="Anthony Imbufe" />
+    <title>Contact | Basic HTML Website</title>
+</head>
+<body>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/227274030?v=4&size=64" alt="Image of myself to be used as a logo" height="60px" width="60px">
+        <h4>Imbufe Anthony</h4>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html" >Projects</a>
+            <a href="articles.html">Articles</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-us">
+            <h2>Have Questions About Planetary Science?</h2>
+            <p>Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? <br>
+                Reach out and we’ll get back to you.</p>
+            <form action="/submit" method="post">
+                <label for="fullname">Full Name:</label> <br>
+                <input 
+                    type="text" 
+                    name="fullname" 
+                    id="fullname" 
+                    min="10" 
+                    max="20" 
+                    placeholder="Full Name" required="true"
+                >
+                <p></p>
+
+                <label for="email">Email:</label> <br>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="example@example.com"
+                    required
+                >
+                <p></p>
+
+                <label for="city">City</label> <br>
+                <select name="city" id="city" required>
+                    <option value="" style="opacity: 50%;">Choose City</option>
+                    <option value="epe">Epe</option>
+                    <option value="ayobo">Ayobo</option>
+                    <option value="igando">Igando</option>
+                    <option value="ikotun">Ikotun</option>
+                    <option value="iyana iba">Iyanu Iba</option>
+                    <option value="idimu">Idimu</option>
+                    <option value="egbeda">Egbeda</option>
+                    <option value="iyana ipaja">Iyanu Ipaja</option>
+                    <option value="oshodi">Oshodi</option>
+                    <option value="costain">Costain</option>
+                </select>
+                <p></p>
+
+                <label for="phone">Phone Number</label> <br>
+                <input 
+                    type="tel" 
+                    name="phone" 
+                    id="phone" 
+                    maxlength="11"
+                    placeholder="please enter a valid phone number" 
+                    required
+                >
+                <p></p>
+
+                <label for="message">Message</label> <br>
+                <textarea 
+                    name="message" 
+                    id="message" 
+                    rows="10" 
+                    cols="40" 
+                    maxlength="100"
+                    placeholder="Enter your message"
+                    required
+                ></textarea>
+                <p style="opacity: 50%;">100 characters</p>
+    
+                <p>How should we contact you?</p>
+                <label>
+                <input type="radio" name="preferred-contact" value="phone">Phone
+                </label>
+                <label> 
+                <input type="radio" name="preferred-contact" value="email">Email
+                </label>
+                <label>
+                <input type="radio" name="preferred-contact" value="both">Both
+                </label>
+
+                <p>How should we contact you?</p>
+                <label>
+                <input type="checkbox" name="referred" value="friend">Friend
+                </label>
+                <label> 
+                <input type="checkbox" name="referred" value="ts-academy">TS Academy
+                </label>
+                <label>
+                <input type="checkbox" name="referred" value="others">Others
+                </label>
+                <p></p> 
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <br>
+    <footer>
+            <p style="text-align: center;">
+                &copy; all rights reserved 2025
+            </p>
+    </footer>
+</body>
+</html>
